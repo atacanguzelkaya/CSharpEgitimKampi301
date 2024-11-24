@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace CSharpEgitimKampi301.EFProject
 {
@@ -27,7 +26,8 @@ namespace CSharpEgitimKampi301.EFProject
 		{
 			var values = db.Location.ToList();
 			dataGridView1.DataSource = values;
-		}
+            dataGridView1.Columns["Guide"].Visible = false;
+        }
 
 		private void btnAdd_Click(object sender, EventArgs e)
 		{

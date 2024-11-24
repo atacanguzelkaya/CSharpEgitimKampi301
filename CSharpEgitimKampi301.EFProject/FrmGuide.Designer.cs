@@ -1,6 +1,6 @@
 ﻿namespace CSharpEgitimKampi301.EFProject
 {
-    partial class Form1
+    partial class FrmGuide
     {
         /// <summary>
         /// Required designer variable.
@@ -161,10 +161,11 @@
             this.btnGetById.UseVisualStyleBackColor = true;
             this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
-            // Form1
+            // FrmGuide
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(764, 322);
             this.Controls.Add(this.btnGetById);
             this.Controls.Add(this.btnUpdate);
@@ -178,8 +179,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnList);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FrmGuide";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Guide Form";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace CSharpEgitimKampi301.EFProject
 {
-    public partial class Form1 : Form
+    public partial class FrmGuide : Form
     {
-        public Form1()
+        public FrmGuide()
         {
             InitializeComponent();
         }
@@ -15,6 +15,7 @@ namespace CSharpEgitimKampi301.EFProject
         {
             var values = db.Guide.ToList();
             dataGridView1.DataSource = values;
+            dataGridView1.Columns["Location"].Visible = false;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
